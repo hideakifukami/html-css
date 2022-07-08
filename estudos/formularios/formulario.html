@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+   <header>
+       
+       <div>
+           <h1 id="titulo">Cadastro de DEVs</h1>
+           <p id="subtitulo">Complete suas informações</p>
+           <br>
+       </div>
+   </header>
+
+    <main>
+        <form action="">
+            <!-- tag para iniciar o formulário-->
+        
+            <fieldset class="grupo">
+                <!-- agrupador de campos-->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <!-- explicação do conteúdo-->
+                    <input type="text" name="nome" id="nome" required>
+                    <!--required faz do campo obrigatório. entrada com type de texto-->
+                </div>
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+                <!--type email predefinido-->
+            </div>
+            <div class="campo">
+                <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+                 <!--conteúdo da pergunta-->
+                <label>
+                    <!--opções para seleção dentro de label com input do tipo radio, seguido do texto que irá ser impresso-->
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" id="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" id="fullstack">Fullstack
+                </label>
+            </div>
+            <div class="campo">
+                <label for="senioridade"><strong>Senioridade</strong></label>
+                <select id="senioridade" required>
+                    <!--usado para criar lista de seleção para apenas uma escolha usando a tag option para os valores-->
+                    <option value="" selected disabled>Selecione</option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+            <fieldse class="grupo">
+                <div id="check">
+                    <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tenologia1" value="HTML">
+                    <!--colocar input do tipo checkbox e acrescentar a tag label com parâmetro for="name" e conteúdo para aparecer, seleciona mais de uma opção-->
+                    <label for="tecnologia1">HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tenologia2" value="CSS">
+                    <label for="tecnologia2">CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tenologia3" value="Javascript">
+                    <label for="tecnologia3">JavaScript</label>
+                    <input type="checkbox" id="tecnologia4" name="tenologia4" value="PHP">
+                    <label for="tecnologia4">PHP</label>
+                    <input type="checkbox" id="tecnologia5" name="tenologia5" value="C#">
+                    <label for="tecnologia5">C#</label>
+                    <input type="checkbox" id="tecnologia6" name="tenologia6" value="Python">
+                    <label for="tecnologia6">Python</label>
+                    <input type="checkbox" id="tecnologia7" name="tenologia7" value="Java">
+                    <label for="tecnologia7">Java</label>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco da sua experiência:</strong></label>
+                <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em;"></textarea> <!-- entrada com área de texto-->
+            </div>
+            <button class="botao" type="submit" onsubmit="">Concluído</button>
+        </form>
+    </main>
+</body>
+</html>
