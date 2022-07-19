@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Início - Coco Bambu Restaurante</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script>
+        var btn = document.getElementById('entendi');
+        var container = document.querySelector('.footer-fx');
+        btn.addEventListener('click', function() {
+
+            if(container.style.display === block) {
+                container.style.display = none; 
+            }
+        });
+
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://cocobambu.com/"><img src="images/logo.png" alt="Logo do Coco Bambu" id="logo"></a>
+        </div>
+
+        <nav>
+            <a href="https://cocobambu.com/quem-somos/">QUEM SOMOS</a>
+            <a href="https://cocobambu.com/unidades/">UNIDADES</a>
+            <a href="https://cocobambu.com/eventos/">EVENTOS</a>
+            <a href="https://cocobambu.com/nossos-produtos/">NOSSOS PRODUTOS</a>
+            <a href="https://cocobambu.com/contato/">CONTATO</a>
+            <a href="http://app.cocobambu.com/" id="delivery">DELIVERY</a>
+            <a href="https://www.yzzer.com/" target="_blank"><img src="images/yzzer.png" alt="Yzzer Logo" id="yzzer"></a>
+        </nav>
+
+        <div id="translate">
+            <a href="#"><img src="images/en.svg" alt="English Translate" class="translate-img"></a>
+            <a href="#"><img src="images/pt-br.svg" alt="Tradução para Português" class="translate-img"></a>
+        </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+        <div id="footer-1"></div>
+        <div class="footer-fx">
+            <div class="footer-fixed">
+                <p id="protection">Proteção de dados Pessoais: O site Coco Bambu utiliza cookies e outras tecnologias semelhantes para melhorar sua experiência e desempenho de acordo com nossa Política de Privacidade. Ao continuar navegando, você aceita estas condições.</p>
+                <button id="entendi">Entendi</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
