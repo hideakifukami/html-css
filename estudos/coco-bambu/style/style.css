@@ -63,11 +63,19 @@ main {
     background-color: brown;
 }
 
-.footer-fx {
-    display: block;
+#ads {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-fixed {
+
+iframe {
+    width: 97.5vw;
+    height: 100vh;
+}
+
+#footer {
     display: flex;
     background-color: white;
     position: fixed;
@@ -83,11 +91,12 @@ main {
     font-size: 0.8em;
 }
 
-#entendi {
+#btn {
     color: white;
     font-weight: lighter;
     background-color: #C6AA69;
     border-radius: 4px;
     padding: 10px 20px;
     border: 0px;
+    cursor: pointer;
 }
