@@ -7,18 +7,6 @@
     <title>Início - Coco Bambu Restaurante</title>
     <link rel="stylesheet" href="style/style.css">
 
-    <script>
-       const footer = document.querySelector("#footer");
-       const button = document.querySelector("#btn");
-
-       button.addEventListener("click", esconder);
-
-       function esconder() {
-        if (footer.style.display == "flex") {
-            footer.style.display = "none";
-        } 
-       }
-    </script>
 </head>
 <body>
     <header>
@@ -63,5 +51,16 @@
             <button id="btn" onclick="esconder()">Entendi</button>
         </div>
     </footer>
+
+    <script>
+        const footer = document.querySelector('#footer');
+        const button = document.querySelector('#btn');
+ 
+        button.addEventListener('click', esconder);
+ 
+        function esconder() {
+        footer.style.display = 'none';
+        }
+     </script>
 </body>
 </html>
